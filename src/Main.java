@@ -23,18 +23,24 @@ public class Main {
     }
 
     public static void task1(){
+        System.out.println("Задача № 1");
+
         for(int count = 1; count <= 10; count++){
             System.out.println(count);
         }
     }
 
     public static void task2(){
+        System.out.println("Задача № 2");
+
         for(int count = 10; count >= 1; count--){
             System.out.println(count);
         }
     }
 
     public static void task3(){
+        System.out.println("Задача № 3");
+
         for(int count = 0; count <= 17; count++){
             if(count % 2 == 0){
                 System.out.println(count);
@@ -43,12 +49,16 @@ public class Main {
     }
 
     public static void task4(){
+        System.out.println("Задача № 4");
+
         for(int count = 10; count >= -10; count--){
             System.out.println(count);
         }
     }
 
     public static void task5(){
+        System.out.println("Задача № 5");
+
         for (int year = 1904; year <= 2096; year++){
             if ((year % 4 == 0) && year % 100 != 0)
             {
@@ -62,18 +72,24 @@ public class Main {
     }
 
     public static void task6(){
+        System.out.println("Задача № 6");
+
         for (int count = 7; count <= 98; count +=7){
             System.out.println(count);
         }
     }
 
     public static void task7(){
+        System.out.println("Задача № 7");
+
         for (int count = 1; count <= 512; count += count){
             System.out.println(count);
         }
     }
 
     public static void task8(){
+        System.out.println("Задача № 8");
+
         float salary = 29000f;
         float total = 0;
         for (int count = 0; count < 12; count++){
@@ -83,6 +99,8 @@ public class Main {
     }
 
     public static void task9(){
+        System.out.println("Задача № 9");
+
         float salary = 29000f;
         float total = 0;
         for (int count = 0; count < 12; count++){
@@ -93,6 +111,8 @@ public class Main {
     }
 
     public static void task10(){
+        System.out.println("Задача № 10");
+
         int number = 0;
         int number1 = 1;
         int number2 = 1;
@@ -108,6 +128,8 @@ public class Main {
     }
 
     public static void task11(){
+        System.out.println("Задача № 11");
+
         int monthCounter = 0;
         float accumulationPerMonth = 15000;
         float accumulatedAmount = 0;
@@ -123,6 +145,8 @@ public class Main {
     }
 
     public static void task12(){
+        System.out.println("Задача № 12");
+
         int count = 1;
 
         while (count <= 10){
@@ -138,6 +162,8 @@ public class Main {
     }
 
     public static void task13(){
+        System.out.println("Задача № 13");
+
         int population = 12000000;
         int birthRate = 17;
         int birthRateInYear = 0;
@@ -153,6 +179,8 @@ public class Main {
     }
 
     public static void task14(){
+        System.out.println("Задача № 14");
+
         float totalAccumulatedAmount = 15000f;
         float desiredAmount = 12000000f;
         float interestOnAccumulatedAmount = 7f;
@@ -168,6 +196,8 @@ public class Main {
     }
 
     public static void task15(){
+        System.out.println("Задача № 15");
+
         float accumulatAmount = 15000f;
         float totalAccumulatedAmount = 0f;
         float desiredAmount = 12000000f;
@@ -188,6 +218,8 @@ public class Main {
     }
 
     public static void task16(){
+        System.out.println("Задача № 16");
+
         int yearsForAccumulated = 9;
         int monthsPerYear = 12;
         int monthsForAccumulated = yearsForAccumulated * monthsPerYear;
@@ -210,6 +242,8 @@ public class Main {
     }
 
     public static void task17(){
+        System.out.println("Задача № 17");
+
         int firstFriday = 3;
         int daysPerMonth = 31;
         int daysCounter = firstFriday;
@@ -222,6 +256,8 @@ public class Main {
     }
 
     public static void task18(){
+        System.out.println("Задача № 18");
+
         int currentYear = 2022;
         int periodAfterInYear = 100;
         int periodBeforeInYear = 200;
