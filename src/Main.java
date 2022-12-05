@@ -17,6 +17,9 @@ public class Main {
         task13();
         task14();
         task15();
+        task16();
+        task17();
+        task18();
     }
 
     public static void task1(){
@@ -150,8 +153,7 @@ public class Main {
     }
 
     public static void task14(){
-        float accumulatAmount = 15000f;
-        float totalAccumulatedAmount = 0f;
+        float totalAccumulatedAmount = 15000f;
         float desiredAmount = 12000000f;
         float interestOnAccumulatedAmount = 7f;
 
@@ -159,7 +161,6 @@ public class Main {
 
         while(totalAccumulatedAmount < desiredAmount){
             totalAccumulatedAmount += totalAccumulatedAmount / 100 * interestOnAccumulatedAmount;
-            totalAccumulatedAmount += accumulatAmount;
             monthCounter++;
 
             System.out.println("Месяц: " + monthCounter + " накопленная сумма: " + totalAccumulatedAmount);
@@ -183,6 +184,58 @@ public class Main {
                 System.out.println("Месяц: " + monthCounter + " накопленная сумма: " + totalAccumulatedAmount);
             }
 
+        }
+    }
+
+    public static void task16(){
+        int yearsForAccumulated = 9;
+        int monthsPerYear = 12;
+        int monthsForAccumulated = yearsForAccumulated * monthsPerYear;
+        int periodGetInformationInMonth = 6;
+        int monthsCounter = 0;
+
+        float interestOnAccumulatedAmount = 7f;
+        float totalAccumulatedAmount = 0f;
+        float accumulateAmount = 15000f;
+
+        while(monthsCounter < monthsForAccumulated){
+            totalAccumulatedAmount += totalAccumulatedAmount / 100 * interestOnAccumulatedAmount;
+            totalAccumulatedAmount += accumulateAmount;
+            monthsCounter++;
+
+            if(monthsCounter % periodGetInformationInMonth == 0){
+                System.out.println("Сумма накоплений за " + monthsCounter + " месяцев" + " составляет: " + totalAccumulatedAmount);
+            }
+        }
+    }
+
+    public static void task17(){
+        int firstFriday = 3;
+        int daysPerMonth = 31;
+        int daysCounter = firstFriday;
+
+        do{
+            System.out.println("Сегодня пятница, " + daysCounter + "-е число. Необходимо подготовить отчет");
+            daysCounter += 7;
+        }
+        while (daysCounter <= daysPerMonth);
+    }
+
+    public static void task18(){
+        int currentYear = 2022;
+        int periodAfterInYear = 100;
+        int periodBeforeInYear = 200;
+        int calculationYearBefore = currentYear - periodBeforeInYear;
+        int calculationYearAfter = currentYear + periodAfterInYear;
+        int counterYear = 0;
+        int periodOfFlyComet = 79;
+
+        while (counterYear <= calculationYearAfter){
+            counterYear += periodOfFlyComet;
+
+            if(counterYear >= calculationYearBefore && counterYear <= calculationYearAfter){
+                System.out.println(counterYear);
+            }
         }
     }
 }
